@@ -1,0 +1,9 @@
+• O QUE É TIPAR? -> Definir a que tipo algo pertence. 
+   Exemplo abaixo:
+
+      interface Props extends TouchableOpacityProps {
+         title: string;
+         image: ImageProps;
+      }
+   
+   `ImageProps` é uma tipagem, devido seu nome estar definindo que essa imagem é do tipo `Props`.

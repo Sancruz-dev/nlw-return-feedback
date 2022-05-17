@@ -1,0 +1,21 @@
+=== NPM ===
+
+npm create vite@latest
+
+npm install -D tailwindcss postcss autoprefixer
+
+npm install phosphor-react
+
+npm install @headlessui/react
+
+npm install -D @tailwindcss/forms
+
+npm install html2canvas
+
+npm install axios
+
+=== NPX ===
+
+npx tailwindcss init
+
+npx tailwindcss init -p
