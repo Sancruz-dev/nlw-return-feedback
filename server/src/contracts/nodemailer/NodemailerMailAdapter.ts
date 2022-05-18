@@ -1,15 +1,14 @@
 import nodemailer from 'nodemailer'
 import { MailAdapter, SendMailData } from "../MailAdapter";
-// import { SMTP_MAILTRAP, SMTP_GOOGLE } from '../config/smtp'
+import { SMTP_MAILTRAP, SMTP_GOOGLE } from '../config/smtp'
 
 const transport = nodemailer.createTransport({
-   service: 'gmail',
-   host: "smtp.google.com",
-   port: 587,
+   host: SMTP_MAILTRAP.host,
+   port: SMTP_MAILTRAP.port,
    secure: false,
    auth: {
-      user: "pereirasanmir@gmail.com",
-      pass: "sancruz18",
+      user: SMTP_MAILTRAP.user,
+      pass: SMTP_MAILTRAP.pass,
    },
    tls: {
       rejectUnauthorized: false,

@@ -11,4 +11,6 @@ export const SMTP_GOOGLE = {
    secure: false,
    user: "pereirasanmir@gmail.com",
    pass: "sancruz18",
+
+   // Google não aceita imagem em base64
 }
